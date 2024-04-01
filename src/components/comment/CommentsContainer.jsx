@@ -4,7 +4,6 @@ import { getCommentsData } from "../../data/comments";
 import Comment from "./Comment";
 import CommentForm from "./CommentForm";
 
-
 const CommentsContainer = ({ className, logginedUserId }) => {
   const [comments, setComments] = useState([]);
   const mainComments = comments.filter((comment) => comment.parent === null);
